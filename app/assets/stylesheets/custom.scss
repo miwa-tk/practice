@@ -57,7 +57,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -66,9 +66,8 @@ p {
 #logo:hover {
   color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 3px #eee; /*後から検討*/
 }
 
-header{
-  background-color: #280a00;/*後から検討*/
+.navbar-inverse{
+  background-color: #1e0a00;/*後から検討*/
 }
