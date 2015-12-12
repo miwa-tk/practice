@@ -5,7 +5,10 @@
 
 body {
   padding-top: 60px;
+  background-color:#fffaf0;
 }
+
+
 
 section {
   overflow: auto;
@@ -50,6 +53,8 @@ p {
   line-height: 1.7em;
 }
 
+
+
 /* header */
 
 #logo {
@@ -70,4 +75,46 @@ p {
 
 .navbar-inverse{
   background-color: #1e0a00;/*後から検討*/
+}
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+
+
+/*form*/
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+/*error*/
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }

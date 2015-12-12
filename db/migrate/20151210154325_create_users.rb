@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :password_digest
 
       t.timestamps null: false
-      t.index :emal, unique: true #追加
+      t.index :email, unique: true #追加
     end
   end
 end
